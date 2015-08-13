@@ -1,0 +1,9 @@
+while 1                                       // infinite app loop
+{
+  clear( RED )                                // clear current screen with color RED
+  print( "Hello World!", 0, 0, WHITE )
+  while( get_event() ) {                      // new event from system?
+    if EVT[ EVT_TYPE ] == EVT_QUIT { halt }
+  }
+  frame()                                     // draw current screen
+}
